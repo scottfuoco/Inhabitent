@@ -219,19 +219,6 @@ td,
 th {
   padding: 0; }
 
-.container {
-  width: 1120px;
-  margin: 0 auto; }
-
-a {
-  text-decoration: none; }
-
-li {
-  list-style: none; }
-
-.bold {
-  font-weight: bold; }
-
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
@@ -567,6 +554,23 @@ a {
 .widget_search .search-submit {
   display: none; }
 
+.container {
+  width: 1120px;
+  margin: 0 auto; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+
+li {
+  list-style: none; }
+
+.bold {
+  font-weight: bold; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -594,7 +598,17 @@ a {
   .entry-header img {
     width: 100%; }
 
-.content .entry-title {
+.journal {
+  display: -ms-flexbox;
+  display: flex; }
+  .journal .left-side {
+    width: 75%;
+    padding-right: 1rem; }
+  .journal .right-side {
+    width: 25%;
+    padding: 0 1rem; }
+
+.journal-content .entry-title {
   background-color: #248a83;
   color: #fff;
   font-size: 33.6px;
@@ -605,14 +619,14 @@ a {
   margin-top: 2.25rem;
   max-width: 75%;
   top: 0; }
-  .content .entry-title a {
+  .journal-content .entry-title a {
     color: #fff; }
-    .content .entry-title a:hover, .content .entry-title a:focus {
+    .journal-content .entry-title a:hover, .journal-content .entry-title a:focus {
       color: #2f1339; }
-    .content .entry-title a:visited {
+    .journal-content .entry-title a:visited {
       color: #fff; }
 
-.content .entry-meta {
+.journal-content .entry-meta {
   background-color: #248a83;
   bottom: 0;
   color: #fff;
@@ -650,9 +664,9 @@ a {
 .bypostauthor {
   display: block; }
 
-.hero-hero {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(../../images/home-hero.jpg) no-repeat center bottom;
-  background-size: cover, cover;
+.home-hero {
+  background: url(../../images/logos/inhabitent-logo-full.svg) no-repeat center center, linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(../../images/home-hero.jpg) no-repeat center bottom;
+  background-size: auto, cover, cover;
   height: 100vh; }
 
 .about-hero {
@@ -675,6 +689,40 @@ a {
     margin-bottom: 0; }
   .about p {
     font-size: 1.2rem; }
+
+.front-page ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .front-page ul .entry-meta {
+    color: #404040;
+    font-size: 1rem; }
+  .front-page ul .entry-title a {
+    color: #248a83;
+    text-decoration: none;
+    font-size: 1.5rem; }
+    .front-page ul .entry-title a:hover {
+      color: #2f1339; }
+  .front-page ul .thumbnail img {
+    height: 250px;
+    width: 100%; }
+  .front-page ul li {
+    width: 33%;
+    padding: 0 .5rem; }
+    .front-page ul li .recent-journal-item-text {
+      border: 1px solid lightgrey;
+      padding: 0 .5rem; }
+
+.recent-journals-header {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.5rem; }
+
+.latest-adventures-header {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.5rem; }
 
 #site-navigation {
   display: -ms-flexbox;
@@ -721,25 +769,35 @@ footer {
     font-size: 1.2rem;
     margin-bottom: .75rem;
     text-transform: uppercase; }
-  footer .footer-logo {
-    width: 200px;
+  footer .footer-logo img {
+    width: 280px;
     height: auto; }
 
 .footer-block {
+  width: 100%;
   display: -ms-inline-flexbox;
   display: inline-flex; }
 
 .contact-info {
-  -ms-flex: 0 0 25%;
-      flex: 0 0 25%; }
+  width: 25%;
+  margin-top: 2rem; }
+  .contact-info h3 {
+    margin-top: 0; }
 
 .business-hours {
-  -ms-flex: 0 0 25%;
-      flex: 0 0 25%; }
+  width: 25%;
+  margin-top: 2rem; }
+  .business-hours h3 {
+    margin-top: 0; }
 
 .footer-logo {
-  -ms-flex: 0 0 50%;
-      flex: 0 0 50%; }
+  width: 50%;
+  margin: 0;
+  margin-top: 2rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end; }
 
 .site-info {
   text-align: center;

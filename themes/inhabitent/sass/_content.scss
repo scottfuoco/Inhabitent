@@ -36,8 +36,21 @@
 }
 
 
+.journal {
+	display:flex;
+	
+	.left-side{
+		width: 75%;
+		padding-right:1rem;
+	}
 
-.content {
+	.right-side{
+		width:25%;
+		padding:0 1rem;
+	}
+
+}
+.journal-content {
 	.entry-title {
 		background-color: #248a83;
 		color: #fff;
@@ -110,11 +123,14 @@
 	display: block;
 }
 
-.hero-hero{
-	background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
-		url(../images/home-hero.jpg) no-repeat center bottom;
-		background-size: cover, cover;
-		height: 100vh;
+.home-hero{
+	background: 
+	url(../../images/logos/inhabitent-logo-full.svg) no-repeat center center,
+	linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
+	url(../../images/home-hero.jpg) no-repeat center bottom;
+	background-size: auto, cover, cover;
+	height: 100vh;
+
 }
 
 .about-hero {
@@ -140,4 +156,53 @@
 		font-size:1.2rem;
 	}
 
+}
+
+.front-page{
+	ul{
+		display: flex;
+		justify-content: space-between;
+
+		.entry-meta{
+			color:#404040;
+			font-size: 1rem;
+		}
+
+		.entry-title a{
+			color: #248a83;
+			text-decoration: none;
+			font-size: 1.5rem;
+
+			&:hover {
+				color: #2f1339;
+			}
+
+		}
+		.thumbnail img{
+			height: 250px;
+			width: 100%
+		}
+
+
+		li{
+			width: 33%;
+			padding: 0 .5rem;
+
+			.recent-journal-item-text{
+				border: 1px solid lightgrey;
+				padding: 0 .5rem;
+			}
+		}
+	}
+}
+.recent-journals-header{
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 2.5rem;
+}
+
+.latest-adventures-header{
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 2.5rem;
 }
