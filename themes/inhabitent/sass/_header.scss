@@ -1,0 +1,44 @@
+
+
+#site-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 1120px;
+    padding-bottom: 80px;
+    background-color: hsla(0,0%,100%,.85);
+    border-bottom: 1px solid #e1e1e1;
+    padding: .5rem 0;
+    position: fixed;
+    transition: top .5s linear;
+    width: 100%;
+    z-index: 3;
+}
+
+header {
+    .main-navigation a {
+        font-size: 1.1rem;
+        color: #248a83;
+
+        &:hover, &:visited, &:focus{
+            color:#2f1339;
+        }
+    }
+
+}
+
+.header-logo {
+    background: url(http://localhost:8888/inhabitent/wp-content/themes/inhabitent/images/logos/inhabitent-logo-tent.svg) no-repeat;
+    background-size: contain;
+    height: 33px;
+    margin: 0;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    width: 50px;
+}
+
+#site-navigation li{
+  padding: 0 1rem;
+}
