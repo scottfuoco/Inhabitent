@@ -8,13 +8,11 @@
  */
 
 get_header(); ?>
-
+    <section class="about-hero">
+        <h1><?php single_post_title(); ?></h1>
+    </section>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
-            <section class="about-hero">
-               <h1><?php single_post_title(); ?></h1>
-            </section>
 
             <div class="about container">
                 <div class="our_story">

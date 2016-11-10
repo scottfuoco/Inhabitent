@@ -24,7 +24,7 @@ get_header(); ?>
 		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
-        <?php echo CFS()->get( 'product_price' ) . "ASD"; ?>
+        <?php echo CFS()->get( 'product_price' ); ?>
 	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>

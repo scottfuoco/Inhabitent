@@ -23,16 +23,6 @@ get_header(); ?>
                 <?php endif; ?>
 			<?php endif; ?>
 
-                <?php
-                    $args = array(  'numberposts'       => 3,
-                                    'orderby'           => 'post_date',
-                                    'order'             => 'DESC',
-                                    'post_type'         => 'post',
-                                );
-
-                    $journal_post = get_posts( $args ); // returns an array of posts                
-                ?>
-
                 <h3 class="recent-journals-header">Shop Stuff</h3>
                 <div class = "shop-stuff">
                     <?php    
@@ -54,6 +44,15 @@ get_header(); ?>
 
 
                 <ul>
+                 <?php
+                    $args = array(  'numberposts'       => 3,
+                                    'orderby'           => 'post_date',
+                                    'order'             => 'DESC',
+                                    'post_type'         => 'post',
+                                );
+
+                    $journal_post = get_posts( $args ); // returns an array of posts                
+                ?>
                 <?php foreach ( $journal_post as $post ) : setup_postdata( $post ); ?>
                     <li>
                         <div class="thumbnail">

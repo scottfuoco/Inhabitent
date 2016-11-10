@@ -8,10 +8,13 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="journal-content">
+	<div class="main-content">
 		<header class="entry-header">
+
 			<?php if ( has_post_thumbnail() ) : ?>
-				<?php the_post_thumbnail( 'large' ); ?>
+				<?php if ( is_home() ) : ?>
+					<?php the_post_thumbnail( 'large' ); ?>
+				<?php endif; ?>				
 			<?php endif; ?>
 
 			<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
@@ -28,7 +31,7 @@
 		</div><!-- .entry-content -->
 
 		<p>
-			<a href="<?php esc_url(get_post_permalink()); ?>" rel="bookmark" class="read-more black-btn">Read more &rarr;</a>
+			<a href="<?php esc_url(the_permalink()); ?>" rel="bookmark" class="read-more black-btn">Read more &rarr;</a>
 		</p>
 	</div>
 </article><!-- #post-## -->

@@ -554,10 +554,6 @@ a {
 .widget_search .search-submit {
   display: none; }
 
-.container {
-  width: 1120px;
-  margin: 0 auto; }
-
 a {
   text-decoration: none; }
 
@@ -593,22 +589,74 @@ li {
 .entry-summary {
   margin: 1.5em 0 0; }
 
-.entry-header {
+.site-content {
+  padding-top: 50px; }
+
+.content-area {
+  width: 1120px;
+  margin: 0 auto; }
+
+.type-post .entry-header {
   position: relative; }
-  .entry-header img {
+  .type-post .entry-header img {
     width: 100%; }
 
-.journal {
+.type-product .entry-header {
+  position: relative; }
+  .type-product .entry-header img {
+    width: 300px; }
+
+.blog .journal {
   display: -ms-flexbox;
   display: flex; }
-  .journal .left-side {
+  .blog .journal .left-side {
     width: 75%;
-    padding-right: 1rem; }
-  .journal .right-side {
+    padding-right: 2rem;
+    padding-top: 2rem;
+    border-right: 1px solid lightgrey; }
+  .blog .journal .right-side {
+    width: 25%;
+    padding-top: 2rem;
+    padding-left: 4rem; }
+
+.post-type-archive-product .product-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .post-type-archive-product .product-content article {
     width: 25%;
     padding: 0 1rem; }
+  .post-type-archive-product .product-content .thumbnail {
+    position: relative;
+    width: 250px;
+    height: 200px;
+    overflow: hidden; }
+  .post-type-archive-product .product-content .thumbnail img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    transform: translate(-50%, -50%); }
 
-.journal-content .entry-title {
+.post-type-archive-product .product-price-summary {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin: 0 1rem; }
+  .post-type-archive-product .product-price-summary span:first-child:after {
+    padding-left: .25rem;
+    float: right;
+    width: 0;
+    white-space: nowrap;
+    content: "......................"; }
+  .post-type-archive-product .product-price-summary span:last-child {
+    padding-left: .25rem;
+    background: #fff; }
+
+.blog .main-content .entry-title {
   background-color: #248a83;
   color: #fff;
   font-size: 33.6px;
@@ -619,14 +667,14 @@ li {
   margin-top: 2.25rem;
   max-width: 75%;
   top: 0; }
-  .journal-content .entry-title a {
+  .blog .main-content .entry-title a {
     color: #fff; }
-    .journal-content .entry-title a:hover, .journal-content .entry-title a:focus {
+    .blog .main-content .entry-title a:hover, .blog .main-content .entry-title a:focus {
       color: #2f1339; }
-    .journal-content .entry-title a:visited {
+    .blog .main-content .entry-title a:visited {
       color: #fff; }
 
-.journal-content .entry-meta {
+.blog .main-content .entry-meta {
   background-color: #248a83;
   bottom: 0;
   color: #fff;
@@ -741,6 +789,8 @@ li {
   transition: top .5s linear;
   width: 100%;
   z-index: 3; }
+  #site-navigation:after {
+    margin-bottom: 50px; }
 
 header .main-navigation a {
   font-size: 1.1rem;
@@ -773,27 +823,36 @@ footer {
     width: 280px;
     height: auto; }
 
+.site-footer {
+  width: 100%; }
+
 .footer-block {
   width: 100%;
   display: -ms-inline-flexbox;
-  display: inline-flex; }
+  display: inline-flex;
+  margin-top: 4rem;
+  font-size: 1.2rem; }
 
 .contact-info {
-  width: 25%;
-  margin-top: 2rem; }
+  width: 25%; }
   .contact-info h3 {
-    margin-top: 0; }
+    margin-top: 0;
+    font-size: 1.3rem; }
+  .contact-info i {
+    margin-right: .5rem; }
+  .contact-info ul {
+    display: -ms-flexbox;
+    display: flex; }
+    .contact-info ul li {
+      color: white; }
 
 .business-hours {
-  width: 25%;
-  margin-top: 2rem; }
+  width: 25%; }
   .business-hours h3 {
     margin-top: 0; }
 
 .footer-logo {
   width: 50%;
-  margin: 0;
-  margin-top: 2rem;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: end;

@@ -10,6 +10,7 @@
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="content-area">
 					<div class="footer-block">
 							<div class="contact-info">
 								<h3>Contact Info</h3>
@@ -36,14 +37,13 @@
 								<img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-text.svg" alt="logo" />
 							</a>
 						</div>
+						</div>
 				</div>
 				<div class="site-info">
 					<p>copyright &copy; 2016 Inhabitent</p>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
-
-		<?php wp_footer(); ?>
 
 	</body>
 </html>

@@ -27,7 +27,16 @@
 	margin: $base__space-unit 0 0;
 }
 
-.entry-header {
+.site-content {
+	padding-top: 50px;
+}
+
+.content-area {
+	width: 1120px;
+    margin: 0 auto;
+}
+
+.type-post .entry-header {
 	position: relative;
 
 	img {
@@ -35,22 +44,84 @@
 	}
 }
 
+.type-product .entry-header {
+	position: relative;
+	img {
+		width:300px;
+	}
+}
 
-.journal {
+.blog .journal {
 	display:flex;
-	
 	.left-side{
 		width: 75%;
-		padding-right:1rem;
+		padding-right:2rem;
+		padding-top: 2rem;
+		border-right: 1px solid lightgrey;
+
 	}
 
 	.right-side{
 		width:25%;
-		padding:0 1rem;
+		padding-top: 2rem;
+		padding-left:4rem;
 	}
 
 }
-.journal-content {
+.post-type-archive-product{ 
+	header {
+
+	}
+	.shop-stuff{
+
+	}
+	.product-content {
+		display: flex;
+		flex-wrap: wrap;
+	
+	article {
+		width: 25%;
+		padding: 0 1rem;
+	}
+		.thumbnail {
+			position: relative;
+			width: 250px;
+			height: 200px;
+			overflow: hidden;
+		}
+		.thumbnail img {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			height: 100%;
+			width: auto;
+			-webkit-transform: translate(-50%,-50%);
+				-ms-transform: translate(-50%,-50%);
+					transform: translate(-50%,-50%);
+
+		}
+	}
+
+	.product-price-summary {
+		display:flex;
+		justify-content: space-between;
+		margin: 0 1rem;
+	
+		span:first-child:after{
+			padding-left:.25rem;
+			float: right;
+			width: 0;
+			white-space: nowrap;
+			content: "......................";
+		}
+
+			span:last-child{
+				padding-left:.25rem;
+				    background: #fff;
+			}
+	}
+}
+.blog .main-content {
 	.entry-title {
 		background-color: #248a83;
 		color: #fff;
