@@ -23,12 +23,20 @@
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
 	
-					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>				</div><!-- .site-branding -->
+					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1></div><!-- .site-branding -->
 
-				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<a href="#"><h1 class="header-logo">Inhabitents Logo</h1></a>
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+				<nav id="site-navigation" class="main-navigation container" role="navigation">
+					<a href="<?php  echo esc_url( home_url( '/' ) ); ?>"><h1 class="header-logo">Inhabitents Logo</h1></a>
+
+					<div class="menu-bar">
+						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+
+						<div class="header-search">
+							<a class="search-icon"><i class="fa fa-search"></i></a>
+							<?php get_search_form(); ?>
+						</div>
+					</div>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
