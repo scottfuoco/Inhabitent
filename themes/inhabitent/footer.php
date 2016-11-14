@@ -25,9 +25,9 @@
 							<div class="business-hours">
 								<h3>Business Hours</h3>
 								<ul>
-									<li> <span class="bold">Monday-Friday:</span> 9am to 5pm</p>
-									<li> <span class="bold">Saturday:</span> 10am to 2pm</p>
-									<li> <span class="bold">Sunday:</span> Closed</p>
+									<li> <span class="bold">Monday-Friday:</span> 9am to 5pm</li>
+									<li> <span class="bold">Saturday:</span> 10am to 2pm</li>
+									<li> <span class="bold">Sunday:</span> Closed</li>
 								</ul>
 							</div>
 										

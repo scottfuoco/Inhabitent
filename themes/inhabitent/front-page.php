@@ -10,9 +10,6 @@ get_header(); ?>
     <section class="home-hero"></section>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main front-page" role="main">
-
-
-
             <?php if ( have_posts() ) : ?>
 
                 <?php if ( is_home() && ! is_front_page() ) : ?>
@@ -33,7 +30,7 @@ get_header(); ?>
                     ?>  
                         <div class="shop-stuff-item">
                             <div class="product-icon-image">       
-                                <img src="<?php echo get_template_directory_uri();?>/images/product-type-icons/<?php echo $term->slug; ?>.svg">
+                                <img src="<?php echo get_template_directory_uri();?>/images/product-type-icons/<?php echo $term->slug; ?>.svg" alt="">
                             </div>
                             <p> <?php echo $term->description; ?> </p>
                             <a href='<?php echo $url?>' class='button-link'><?php echo $term->name; ?></a> </div>
@@ -81,15 +78,15 @@ get_header(); ?>
                     </div>
                     <div class="latest-adventures-right">
                         <div class="adventure-image-container">
-                            <img class="top-image" src="<?php echo get_template_directory_uri();?>/images/adventure-photos/beach-bonfire.jpg">
+                            <img class="top-image" src="<?php echo get_template_directory_uri();?>/images/adventure-photos/beach-bonfire.jpg" alt="">
                             <h3>Getting Back to Nature in a Canoe</h3>
                         </div>
                          <div class="adventure-image-container">
-                            <img class="bottom-image left-image narrow-image" src="<?php echo get_template_directory_uri();?>/images/adventure-photos/night-sky.jpg">
+                            <img class="bottom-image left-image narrow-image" src="<?php echo get_template_directory_uri();?>/images/adventure-photos/night-sky.jpg" alt="">
                             <h3>Taking in the View at Big Mountain</h3>
                         </div>
                          <div class="adventure-image-container">
-                            <img class="bottom-image right-image narrow-image" src="<?php echo get_template_directory_uri();?>/images/adventure-photos/mountain-hikers.jpg">
+                            <img class="bottom-image right-image narrow-image" src="<?php echo get_template_directory_uri();?>/images/adventure-photos/mountain-hikers.jpg" alt="">
                              <h3>Star-Gazing at the Night Sky</h3>
                         </div>
                     </div>
