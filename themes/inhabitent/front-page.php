@@ -7,12 +7,11 @@
 
 get_header(); ?>
 
+    <section class="home-hero"></section>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main front-page" role="main">
 
-		<section class="home-hero">
 
-		</section>
 
             <?php if ( have_posts() ) : ?>
 
@@ -23,27 +22,28 @@ get_header(); ?>
                 <?php endif; ?>
 			<?php endif; ?>
 
-                <h3 class="recent-journals-header">Shop Stuff</h3>
-                <div class = "shop-stuff">
+                <h2 class="title-header">Shop Stuff</h2>
+                <div class="shop-stuff container">
                     <?php    
                         $terms = get_terms( array(
                                             'taxonomy' => 'product_type',
-                                            'orderby' => 'name',
-                                        ));
-
-                        foreach ($terms as $term) {
+                                            'orderby' => 'name', ));
+                        foreach ($terms as $term) :
                             $url = get_term_link ($term->slug , 'product_type');              
-                    ?>                       
-                        <img src="<?php echo get_template_directory_uri();?>/images/product-type-icons/<?php echo $term->slug; ?>.svg">
-                        <div class = 'shop-offers'><p> <?php echo $term->description; ?> </p>
-                        <a href='<?php echo $url?>' class='button'><?php echo $term->name; ?></a> </div>
-                    <?php
-                        }
-                    ?>
+                    ?>  
+                        <div class="shop-stuff-item">
+                            <div class="product-icon-image">       
+                                <img src="<?php echo get_template_directory_uri();?>/images/product-type-icons/<?php echo $term->slug; ?>.svg">
+                            </div>
+                            <p> <?php echo $term->description; ?> </p>
+                            <a href='<?php echo $url?>' class='button-link'><?php echo $term->name; ?></a> </div>
+                        
+                    <?php endforeach; ?>
                 </div> <!-- shop stuff -->
 
 
-                <ul>
+                <h2 class="title-header">Inhabitent Journal</h2>
+                <ul class="container">
                  <?php
                     $args = array(  'numberposts'       => 3,
                                     'orderby'           => 'post_date',
@@ -71,13 +71,27 @@ get_header(); ?>
                 <?php endforeach; wp_reset_postdata(); ?>
                 </ul>
 
-                 <h3 class="latest-adventures-header">Latest Adventures</h3>
-                 <div class="latest-adventures-container">
-                    <div class="latest-adventures-left">
-                    
+                 <h2 class="title-header">Latest Adventures</h2>
+
+                 <div class="latest-adventures-container container">
+                    <div class="latest-adventures-left adventure-image-container">
+                            <img src="<?php echo get_template_directory_uri();?>/images/adventure-photos/canoe-girl.jpg" alt="Image of a girl in a canoe">
+                            <h3>A Night with Friends at the Beach</h3>
+                         <div class="gradient-overlay"></div>
                     </div>
                     <div class="latest-adventures-right">
-
+                        <div class="adventure-image-container">
+                            <img class="top-image" src="<?php echo get_template_directory_uri();?>/images/adventure-photos/beach-bonfire.jpg">
+                            <h3>Getting Back to Nature in a Canoe</h3>
+                        </div>
+                         <div class="adventure-image-container">
+                            <img class="bottom-image left-image narrow-image" src="<?php echo get_template_directory_uri();?>/images/adventure-photos/night-sky.jpg">
+                            <h3>Taking in the View at Big Mountain</h3>
+                        </div>
+                         <div class="adventure-image-container">
+                            <img class="bottom-image right-image narrow-image" src="<?php echo get_template_directory_uri();?>/images/adventure-photos/mountain-hikers.jpg">
+                             <h3>Star-Gazing at the Night Sky</h3>
+                        </div>
                     </div>
                 </div>
 

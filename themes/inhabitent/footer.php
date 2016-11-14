@@ -10,8 +10,7 @@
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
-				<div class="content-area">
-					<div class="footer-block">
+					<div class="footer-block container">
 							<div class="contact-info">
 								<h3>Contact Info</h3>
 								<p><i class="fa fa-envelope"></i><a href="#">info@inhabitent.com</a></p>
@@ -38,12 +37,13 @@
 							</a>
 						</div>
 						</div>
-				</div>
 				<div class="site-info">
 					<p>copyright &copy; 2016 Inhabitent</p>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
+
+		<?php wp_footer(); ?>
 
 	</body>
 </html>

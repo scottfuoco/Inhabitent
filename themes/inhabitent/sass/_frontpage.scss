@@ -1,0 +1,150 @@
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+
+/* Front page */
+.page{
+	.home-hero{
+		background: 
+		url(../../images/logos/inhabitent-logo-full.svg) no-repeat center center,
+		linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
+		url(../../images/home-hero.jpg) no-repeat center bottom;
+		background-size: auto, cover, cover;
+		height: 100vh;
+	}
+
+.site-content{
+	.shop-stuff {
+		display: flex;
+		justify-content: space-between;
+		text-align: center;
+	}
+
+	.shop-stuff-item {
+		width:24%;
+		padding: 1rem .5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border: 1px solid lightgrey;
+		border-top: 4px solid lightgrey;
+
+		&:hover{
+			border-top: 4px solid orange;
+		}
+	}
+	.product-icon-image{
+		height: 70px;
+		width: 70px;
+		padding-bottom: 1rem;
+	}
+
+	ul{
+		display: flex;
+		justify-content: space-between;
+
+		.entry-meta{
+			color:#404040;
+			font-size: 1rem;
+		}
+
+		.entry-title a{
+			color: #248a83;
+			text-decoration: none;
+			font-size: 1.5rem;
+
+			&:hover {
+				color: #2f1339;
+			}
+
+		}
+		.thumbnail img{
+			height: 250px;
+			width: 100%
+		}
+
+
+		li{
+			width: 33%;
+			padding: 0 .5rem;
+
+			.entry-title {
+				height: 80px;
+			}
+			.recent-journal-item-text{
+				border: 1px solid lightgrey;
+				padding: 0 .5rem;
+			}
+		}
+	}
+}
+	.latest-adventures-container{
+		display: flex;
+		padding-bottom: 2rem;
+		
+		img{
+			width: 100%;
+		}
+
+		.latest-adventures-left {
+				height: 560px;
+				width: 560px;
+				padding-right: 10px;
+			img{
+				height: 560px;
+				width: 550px;
+			}
+		}
+
+				.gradient-overlay{
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 560px;
+				width: 550px;
+				background: rgba(0,0,0,.35);
+		}
+
+		.latest-adventures-right {
+			display: flex;
+			flex-wrap: wrap;
+			height: 560px;
+			width: 560px;
+
+			img{
+				height: 277.5px;
+			}
+
+			.narrow-image {
+				width: 280px;
+			}
+			.top-image {
+				padding-bottom: 2.5px;
+			}
+			.bottom-image {
+				padding-top: 2.5px;
+			}
+			.left-image {
+				padding-right: 5px;
+			}
+			.right-image {
+				padding-left:  5px;
+			}
+		}
+		.adventure-image-container{
+			position:relative;
+
+			h3{
+				font-family: Merriweather;
+				font-size: 2rem;
+				position: absolute;
+				color: #fff;
+				top: 0;
+				left: 0;
+				padding:1rem;
+				z-index: 2;
+			}
+		}
+	}
+}

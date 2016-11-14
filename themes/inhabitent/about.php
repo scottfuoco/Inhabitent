@@ -23,11 +23,8 @@ get_header(); ?>
                     <?php echo CFS()->get( 'our_team' ); ?>
                 </div>
             </div>
-
-            
-                
+     
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

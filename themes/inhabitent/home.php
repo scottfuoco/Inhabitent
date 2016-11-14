@@ -8,8 +8,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main journal" role="main">
-		<div class="left-side">
+		<main id="main" class="site-main" role="main">
 			<?php if ( have_posts() ) : ?>
 
 				<?php if ( is_home() && ! is_front_page() ) : ?>
@@ -32,14 +31,11 @@ get_header(); ?>
 				<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 			<?php endif; ?>
-		</div>
-		<div class="right-side">
-			<?php get_sidebar(); ?>
-		</div>
 
 			</main><!-- #main -->
 		</div><!-- #primary -->
-
+		<?php get_sidebar(); ?>
+<?php get_footer(); ?>
 </div>
 
-<?php get_footer(); ?>
+

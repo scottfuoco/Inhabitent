@@ -27,15 +27,6 @@
 	margin: $base__space-unit 0 0;
 }
 
-.site-content {
-	padding-top: 50px;
-}
-
-.content-area {
-	width: 1120px;
-    margin: 0 auto;
-}
-
 .type-post .entry-header {
 	position: relative;
 
@@ -51,131 +42,9 @@
 	}
 }
 
-.blog .journal {
-	display:flex;
-	.left-side{
-		width: 75%;
-		padding-right:2rem;
-		padding-top: 2rem;
-		border-right: 1px solid lightgrey;
-
-	}
-
-	.right-side{
-		width:25%;
-		padding-top: 2rem;
-		padding-left:4rem;
-	}
-
-}
-.post-type-archive-product{ 
-	header {
-
-	}
-	.shop-stuff{
-
-	}
-	.product-content {
-		display: flex;
-		flex-wrap: wrap;
-	
-	article {
-		width: 25%;
-		padding: 0 1rem;
-	}
-		.thumbnail {
-			position: relative;
-			width: 250px;
-			height: 200px;
-			overflow: hidden;
-		}
-		.thumbnail img {
-			position: absolute;
-			left: 50%;
-			top: 50%;
-			height: 100%;
-			width: auto;
-			-webkit-transform: translate(-50%,-50%);
-				-ms-transform: translate(-50%,-50%);
-					transform: translate(-50%,-50%);
-
-		}
-	}
-
-	.product-price-summary {
-		display:flex;
-		justify-content: space-between;
-		margin: 0 1rem;
-	
-		span:first-child:after{
-			padding-left:.25rem;
-			float: right;
-			width: 0;
-			white-space: nowrap;
-			content: "......................";
-		}
-
-			span:last-child{
-				padding-left:.25rem;
-				    background: #fff;
-			}
-	}
-}
-.blog .main-content {
-	.entry-title {
-		background-color: #248a83;
-		color: #fff;
-		font-size: 33.6px;
-		font-size: 2.1rem;
-		left: 0;
-		padding: .75rem 1.5rem;
-		position: absolute;
-		margin-top: 2.25rem;
-		max-width: 75%;
-		top: 0;
-		
-		a {
-			color: #fff;
-
-			&:hover, &:focus{
-				color:#2f1339;
-			}
-
-			&:visited {
-				color: #fff;
-			}
-		}
-	}
-
-	.entry-meta{
-		background-color: #248a83;
-		bottom: 0;
-		color: #fff;
-		display: inline-block;
-		font-family: Novecento Sans Web,sans-serif;
-		padding: 1.00005rem 1.5rem;
-		position: absolute;
-		right: 0;
-		text-transform: uppercase;
-	}
-}
 .page-links {
 	clear: both;
 	margin: 0 0 $base__space-unit;
-}
-
-.read-more {
-		text-transform: uppercase;
-		padding: .75rem;
-		background-color: #fff;
-		border: 1px solid #000;
-		color: #000;
-		
-	&:hover{
-		background-color: #248a83;
-		border: 1px solid #248a83;
-		color: #fff;
-	}
 }
 
 /* Asides */
@@ -194,86 +63,6 @@
 	display: block;
 }
 
-.home-hero{
-	background: 
-	url(../../images/logos/inhabitent-logo-full.svg) no-repeat center center,
-	linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
-	url(../../images/home-hero.jpg) no-repeat center bottom;
-	background-size: auto, cover, cover;
-	height: 100vh;
-
-}
-
-.about-hero {
-	display:flex;
-	justify-content: center;
-	align-items: center;
-	h1 {
-		color:white;
-		font-size: 2.5rem;
-	}
-}
-
-
-.about{
-	padding-bottom:2rem;
-	h2{
-		text-transform: uppercase;
-		font-size:2.5rem;
-		padding-bottom: 0;
-		margin-bottom: 0;
-	}
-	p{
-		font-size:1.2rem;
-	}
-
-}
-
-.front-page{
-	ul{
-		display: flex;
-		justify-content: space-between;
-
-		.entry-meta{
-			color:#404040;
-			font-size: 1rem;
-		}
-
-		.entry-title a{
-			color: #248a83;
-			text-decoration: none;
-			font-size: 1.5rem;
-
-			&:hover {
-				color: #2f1339;
-			}
-
-		}
-		.thumbnail img{
-			height: 250px;
-			width: 100%
-		}
-
-
-		li{
-			width: 33%;
-			padding: 0 .5rem;
-
-			.recent-journal-item-text{
-				border: 1px solid lightgrey;
-				padding: 0 .5rem;
-			}
-		}
-	}
-}
-.recent-journals-header{
-	text-transform: uppercase;
-	text-align: center;
-	font-size: 2.5rem;
-}
-
-.latest-adventures-header{
-	text-transform: uppercase;
-	text-align: center;
-	font-size: 2.5rem;
+.page-id-40, .blog, .single-post, .search-results  {
+	@extend %content-and-sidebar; 
 }

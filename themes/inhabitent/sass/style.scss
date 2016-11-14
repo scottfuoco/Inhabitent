@@ -49,6 +49,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 @import "variables";
 @import "mixins";
+@import "placeholders";
 
 // CSS included in style.css.
 
@@ -60,10 +61,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "forms";
 @import "navigation";
 @import "modules";
-@import "widgets";
 @import "globals";
 @import "content";
+@import "journal";
+@import "archive";
+@import "about";
 @import "header";
 @import "footer";
 @import "media";
-@import "page-templates";
+@import "frontpage";

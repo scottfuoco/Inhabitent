@@ -1,0 +1,137 @@
+.post-type-archive-product, .tax-product_type{
+
+    .page-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        a, a:visited {
+            color: #248a83;
+            text-decoration: none;
+
+            &:hover, &:focus {
+                color: #2f1339;
+
+            }
+        }
+    }
+    .content-area {
+        display: flex;
+        justify-content: center;
+    }
+
+    .shop-stuff {
+        display: inline-flex;
+        justify-content: center;
+
+        .shop-stuff-item {
+            width: 100px;
+            text-align: center;
+            
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            width: 100px;
+        }
+    }
+
+	.product-content {
+		display: flex;
+		flex-wrap: wrap;
+        border-top: 1px dashed #c8c8c8;
+        padding-top: 2rem;
+        article {
+            width: 25%;
+            padding: 0 1rem;
+        }
+		.thumbnail {
+			position: relative;
+			width: 250px;
+			height: 200px;
+			overflow: hidden;
+		}
+		.thumbnail img {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			height: 100%;
+			width: auto;
+			-webkit-transform: translate(-50%,-50%);
+				-ms-transform: translate(-50%,-50%);
+					transform: translate(-50%,-50%);
+
+		}
+	}
+
+	.product-price-summary {   
+        min-width:250px;
+		padding: 0.5rem .75rem;
+        border: 1px solid #c8c8c8;
+        border-top: 4px solid #c8c8c8;
+
+        .product-title{
+            background: #fff;
+            display: inline;
+         
+            &:before{
+                float: left;
+                width: 0;
+                white-space: nowrap;
+                content: "..............................................";
+            }   
+        }
+
+        .product-price{
+            padding: 0;
+            margin: 0;
+            float: right;
+            padding-left:.25rem;
+            background: #fff;
+        }
+	}
+}
+
+.single-product {
+    article {
+        display: flex;
+    }
+    .product-image{
+        width: 560px;
+        height: 560px;
+    }
+
+    .product-details {
+        width: 560px;
+        padding-left: 2rem;
+
+        .entry-title {
+            text-transform: uppercase;
+            color: #d99054;
+            padding-bottom: .25rem;
+            margin: 0;
+        }
+        .product-price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: .25rem;
+        }
+
+        .entry-content {
+            font-size: 1.2rem;
+            margin-top: 0;
+        }
+
+        .social-media {
+            display: flex;
+
+            li{ 
+                width: auto;
+                padding: .25rem 1rem;
+                text-transform: uppercase;
+                margin-right: 5px;
+            }
+        }
+    }
+}

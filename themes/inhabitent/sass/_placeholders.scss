@@ -1,0 +1,34 @@
+%site-content {
+    .site-content {
+        padding-top: 60px;
+        width:1120px;
+		margin: 0 auto;
+        display: flex;
+    }
+}
+
+%content-and-sidebar {
+    @extend %site-content; 
+
+	.content-area{
+		width: 75%;
+		padding-right:2rem;
+		padding-top: 2rem;
+		border-right: 1px solid lightgrey;
+
+	}
+
+	.widget-area {
+		width:25%;
+		padding: 1rem 1.5rem 0;
+
+		p {
+			display: flex;
+		}
+	}
+
+}
+
+%content-no-sidebar {
+    @extend %site-content;
+}

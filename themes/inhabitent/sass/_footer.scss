@@ -1,6 +1,18 @@
-footer {
+.site-footer {
     background: url(http://localhost:8888/inhabitent/wp-content/themes/inhabitent/images/dark-wood@2x.png);
     color: white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+    a, a:visited {
+        text-decoration: none;
+        color: #fff;
+
+        &:hover, &:focus {
+            text-decoration: underline;
+        }
+    }
 
     h3 {
         color: #d99054;
@@ -15,12 +27,7 @@ footer {
     }
 }
 
-.site-footer{
-    width:100%;
-}
-
 .footer-block {
-    width:100%;
     display: inline-flex;
     margin-top: 4rem;
     font-size: 1.2rem;
@@ -40,10 +47,10 @@ footer {
 
     ul {
         display: flex;
-
         li{
             color: white;
-            
+            font-size: 2rem;
+            padding-right: 1rem;
         }
     }
 }
@@ -58,7 +65,6 @@ footer {
 
 .footer-logo {
     width: 50%;
-
     display: flex;
     justify-content: flex-end;
 

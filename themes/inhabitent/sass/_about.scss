@@ -1,0 +1,23 @@
+.about-hero {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	h1 {
+		color:white;
+		font-size: 2.5rem;
+	}
+}
+
+.about{
+	padding-bottom:2rem;
+	h2{
+		text-transform: uppercase;
+		font-size:2.5rem;
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+	p{
+		font-size:1.2rem;
+	}
+
+}

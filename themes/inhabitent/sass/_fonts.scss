@@ -53,3 +53,31 @@
        url('../../fonts/Merriweather/merriweather-v13-latin-700italic.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../../fonts/Merriweather/merriweather-v13-latin-700italic.svg#Merriweather') format('svg'); /* Legacy iOS */
 }
+
+/* Novecento-regular */
+@font-face {
+  font-family: 'Novecento';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../../fonts/Novecento/novecentosanswide-normal-webfont.eot'); /* IE9 Compat Modes */
+  src: local('Novecento'), local('Novecento-Regular'),
+       url('../../fonts/Novecento/novecentosanswide-normal-webfont?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../fonts/Novecento/novecentosanswide-normal-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../fonts/Novecento/novecentosanswide-normal-webfont.woff') format('woff'), /* Modern Browsers */
+       url('../../fonts/Novecento/novecentosanswide-normal-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../../fonts/Novecento/novecentosanswide-normal-webfont.svg#Novecento') format('svg'); /* Legacy iOS */
+}
+
+/* Novecento-bold */
+@font-face {
+  font-family: 'Novecento';
+  font-style: normal;
+  font-weight: bold;
+  src: url('../../fonts/Novecento/novecentosanswide-demibold-webfont.eot'); /* IE9 Compat Modes */
+  src: local('Novecento Bold'), local('Novecento-Bold'),
+       url('../../fonts/Novecento/novecentosanswide-demibold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../fonts/Novecento/novecentosanswide-demibold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../fonts/Novecento/novecentosanswide-demibold-webfont.woff') format('woff'), /* Modern Browsers */
+       url('../../fonts/Novecento/novecentosanswide-demibold-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../../fonts/Novecento/novecentosanswide-demibold-webfont.svg#Novecento') format('svg'); /* Legacy iOS */
+}
