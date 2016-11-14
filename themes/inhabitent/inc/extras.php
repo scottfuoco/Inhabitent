@@ -44,7 +44,12 @@ function about_page_styles() {
 add_action( 'wp_enqueue_scripts', 'about_page_styles' );
 
 function archive_product_title( $title) {
-	$title = 'Shop Stuff';
+	if(is_post_type_archive('product')){
+		$title = 'Shop Stuff';
+	}
+	elseif( is_tax()) {
+		$title = single_term_title('', false);
+	}
 	return $title;
 }
 add_filter('get_the_archive_title', 'archive_product_title');
