@@ -8,7 +8,8 @@
 # Summary / Purpose
 
 The Inhabitent project is my first attempt/run through of making a custom Wordpress theme. 
-Notable learnings include:
+
+## Notable learnings include:
 * The Wordpress template hierarchy
 * Creating custom pages and taxonomies
 * Creating and using field groups
