@@ -26,7 +26,7 @@
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1></div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation container" role="navigation">
-					<a href="<?php  echo esc_url( home_url( '/' ) ); ?>"><h1 class="header-logo">Inhabitents Logo</h1></a>
+					<a href="<?php  echo esc_url( home_url( '/' ) ); ?>"><h1 class="header-logo" style="background: url(<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-tent.svg) no-repeat; background-size: contain">Inhabitents Logo</h1></a>
 
 					<div class="menu-bar">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
