@@ -653,7 +653,6 @@ i {
   margin: 0 auto; }
 
 .site-content {
-  padding-top: 60px;
   width: 100%; }
 
 .button-link, .button-link:visited {
@@ -1013,8 +1012,6 @@ header .main-navigation a, header .main-navigation a:visited {
     color: #2f1339; }
 
 .header-logo {
-  background: url(http://localhost:8888/inhabitent/wp-content/themes/inhabitent/images/logos/inhabitent-logo-tent.svg) no-repeat;
-  background-size: contain;
   height: 33px;
   margin: 0;
   overflow: hidden;
@@ -1026,7 +1023,6 @@ header .main-navigation a, header .main-navigation a:visited {
   padding: 0 1rem; }
 
 .site-footer {
-  background: url(http://localhost:8888/inhabitent/wp-content/themes/inhabitent/images/dark-wood@2x.png);
   color: white;
   display: -ms-flexbox;
   display: flex;
