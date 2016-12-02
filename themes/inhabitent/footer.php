@@ -16,9 +16,9 @@
 								<p><i class="fa fa-envelope"></i><a href="#">info@inhabitent.com</a></p>
 								<p><i class="fa fa-phone"></i><a href="#">778-456-7891</a></p>
 								<ul>
-									<li><a href="www.facebook.com"><i class="fa fa-facebook-square"></i></a></li>
-									<li><a href="www.twitter.com"><i class="fa fa-twitter-square"></i></a></li>
-									<li><a href="www.googleplus.com"><i class="fa fa-google-plus-square"></i></a></li>
+									<li><a href="http://www.facebook.com"><i class="fa fa-facebook-square"></i></a></li>
+									<li><a href="http://www.twitter.com"><i class="fa fa-twitter-square"></i></a></li>
+									<li><a href="http://www.googleplus.com"><i class="fa fa-google-plus-square"></i></a></li>
 								</ul>							
 							</div>	
 
